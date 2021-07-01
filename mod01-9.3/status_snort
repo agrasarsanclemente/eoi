@@ -1,0 +1,20 @@
+● snort.service - LSB: Lightweight network intrusion detection system
+     Loaded: loaded (/etc/init.d/snort; generated)
+     Active: active (running) since Thu 2021-07-01 13:19:18 CEST; 31min ago
+       Docs: man:systemd-sysv-generator(8)
+    Process: 2672 ExecStart=/etc/init.d/snort start (code=exited, status=0/SUCCESS)
+      Tasks: 2 (limit: 19010)
+     Memory: 142.5M
+     CGroup: /system.slice/snort.service
+             └─2686 /usr/sbin/snort -m 027 -D -d -l /var/log/snort -u snort -g snort -c /etc/snort/snort.conf -S HOME_NET=[10.0.0.0/24] -i enp1s0
+
+jul 01 13:40:23 ciberubuntu snort[2686]: [1:3000001:0] ¡Trafico ICMP! {ICMP} 10.0.0.21 -> 10.0.0.1
+jul 01 13:40:23 ciberubuntu snort[2686]: [1:402:7] ICMP Destination Unreachable Port Unreachable [Classification: Misc activity] [Priority: 3] {ICMP} 10.0.0.21 -> 10.0.0.1
+jul 01 13:43:10 ciberubuntu snort[2686]: [1:3000001:0] ¡Trafico ICMP! {ICMP} 10.0.0.21 -> 10.0.0.1
+jul 01 13:43:10 ciberubuntu snort[2686]: [1:402:7] ICMP Destination Unreachable Port Unreachable [Classification: Misc activity] [Priority: 3] {ICMP} 10.0.0.21 -> 10.0.0.1
+jul 01 13:43:10 ciberubuntu snort[2686]: [1:3000001:0] ¡Trafico ICMP! {ICMP} 10.0.0.21 -> 10.0.0.1
+jul 01 13:43:10 ciberubuntu snort[2686]: [1:402:7] ICMP Destination Unreachable Port Unreachable [Classification: Misc activity] [Priority: 3] {ICMP} 10.0.0.21 -> 10.0.0.1
+jul 01 13:48:10 ciberubuntu snort[2686]: [1:3000001:0] ¡Trafico ICMP! {ICMP} 10.0.0.21 -> 10.0.0.1
+jul 01 13:48:10 ciberubuntu snort[2686]: [1:402:7] ICMP Destination Unreachable Port Unreachable [Classification: Misc activity] [Priority: 3] {ICMP} 10.0.0.21 -> 10.0.0.1
+jul 01 13:48:10 ciberubuntu snort[2686]: [1:3000001:0] ¡Trafico ICMP! {ICMP} 10.0.0.21 -> 10.0.0.1
+jul 01 13:48:10 ciberubuntu snort[2686]: [1:402:7] ICMP Destination Unreachable Port Unreachable [Classification: Misc activity] [Priority: 3] {ICMP} 10.0.0.21 -> 10.0.0.1

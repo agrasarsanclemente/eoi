@@ -1,0 +1,18 @@
+● rsyslog.service - System Logging Service
+     Loaded: loaded (/lib/systemd/system/rsyslog.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2021-07-01 13:19:16 CEST; 31min ago
+TriggeredBy: ● syslog.socket
+       Docs: man:rsyslogd(8)
+             https://www.rsyslog.com/doc/
+   Main PID: 2656 (rsyslogd)
+      Tasks: 4 (limit: 19010)
+     Memory: 1.4M
+     CGroup: /system.slice/rsyslog.service
+             └─2656 /usr/sbin/rsyslogd -n -iNONE
+
+jul 01 13:19:16 ciberubuntu systemd[1]: Starting System Logging Service...
+jul 01 13:19:16 ciberubuntu rsyslogd[2656]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2001.0]
+jul 01 13:19:16 ciberubuntu rsyslogd[2656]: rsyslogd's groupid changed to 110
+jul 01 13:19:16 ciberubuntu systemd[1]: Started System Logging Service.
+jul 01 13:19:16 ciberubuntu rsyslogd[2656]: rsyslogd's userid changed to 104
+jul 01 13:19:16 ciberubuntu rsyslogd[2656]: [origin software="rsyslogd" swVersion="8.2001.0" x-pid="2656" x-info="https://www.rsyslog.com"] start

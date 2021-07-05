@@ -1,0 +1,12 @@
+# $Id: local.rules,v 1.11 2004/07/23 20:15:44 bmc Exp $
+# ----------------
+# LOCAL RULES
+# ----------------
+# This file intentionally does not come with signatures.  Put your local
+# additions here.
+#
+# Grabaremos una regla para detectar tráfico ICMP (ping)
+alert icmp any any -> $HOME_NET any (msg:"Acceso ICMP"; sid:3000001;)
+#
+#alert tcp any any -> any 22 (msg:"Acceso SSH"; sid:3000002; flow:established; threshold: type limit, track by_src, count 1, seconds 30;)
+alert tcp any any -> any 22 (msg:"Acceso SSH"; sid:3000002;)
